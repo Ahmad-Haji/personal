@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة أحمد حاجي محمد الشخصية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        h1, h2 {
+            color: #FFD700;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .social-links a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffa500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="path/to/your/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>أحمد حاجي محمد</h1>
+            <h2>مهندس معلوماتية مختص في أمن المعلومات</h2>
+            <p>أنا أحمد حاجي محمد، مهندس معلوماتية متخصص في أمن المعلومات. لدي شغف بتصميم الأزياء وأعمل على مزج التكنولوجيا والأزياء بطريقة مبتكرة. خبرتي تتضمن العمل في مجال البرمجة والأمن السيبراني، وأنا دائماً أسعى لتعلم كل ما هو جديد في هذا المجال.</p>
+            
+            <h2>الخبرات العلمية</h2>
+            <ul>
+                <li>برمجة الويب</li>
+                <li>برمجة تطبيقات</li>
+                <li>أمن سيبراني</li>
+            </ul>
+            
+            <h2>المهارات</h2>
+            <ul>
+                <li>تطوير البرامج باستخدام Python وJavaScript</li>
+                <li>تحليل الثغرات الأمنية</li>
+                <li>تصميم وتنفيذ استراتيجيات الحماية السيبرانية</li>
+                <li>تصميم الأزياء ودمجها مع التكنولوجيا</li>
+            </ul>
+            
+            <div class="social-links">
+                <h2>تواصل معي</h2>
+                <a href="https://www.facebook.com/sdmhjmhmd?mibextid=ZbWKwL" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/ahmad1_haji?igsh=eHQ4c2Z6Z2FvcWNv" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const socialLinks = document.querySelectorAll('.social-links a');
+            
+            socialLinks.forEach(link => {
+                link.addEventListener('mouseover', () => {
+                    link.style.color = '#ffa500';
+                });
+
+                link.addEventListener('mouseout', () => {
+                    link.style.color = '#FFD700';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
